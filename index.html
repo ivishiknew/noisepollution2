@@ -16,9 +16,7 @@
             --cream: #F5F1EB;
             --max-width: 680px;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: 'Source Serif 4', Georgia, serif;
             background: var(--bg);
@@ -27,331 +25,123 @@
             font-size: 18px;
             -webkit-font-smoothing: antialiased;
         }
-
-        /* Top red rule */
-        .top-rule {
-            width: 100%;
-            height: 3px;
-            background: var(--red);
-        }
-
-        /* Header */
-        .header {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 24px 20px 0;
-        }
-
+        .top-rule { width: 100%; height: 3px; background: var(--red); }
+        .header { max-width: var(--max-width); margin: 0 auto; padding: 24px 20px 0; }
         .section-label {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--red);
-            margin-bottom: 16px;
+            font-size: 13px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            color: var(--red); margin-bottom: 16px;
         }
-
         h1 {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: clamp(36px, 6vw, 52px);
-            font-weight: 700;
-            line-height: 1.1;
-            color: var(--dark);
-            margin-bottom: 12px;
+            font-weight: 700; line-height: 1.1;
+            color: var(--dark); margin-bottom: 12px;
         }
-
         .rubric {
             font-family: 'Source Serif 4', Georgia, serif;
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 1.5;
-            color: var(--grey);
-            margin-bottom: 24px;
-            font-style: italic;
+            font-size: 20px; font-weight: 300; line-height: 1.5;
+            color: var(--grey); margin-bottom: 24px; font-style: italic;
         }
-
         .meta {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 13px;
-            color: var(--grey);
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--light-grey);
+            font-size: 13px; color: var(--grey);
+            padding-bottom: 20px; border-bottom: 1px solid var(--light-grey);
         }
-
-        /* Hero image area */
-        .hero {
-            width: 100%;
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
+        .hero { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 20px; }
         .hero-image {
-            width: 100%;
-            height: clamp(280px, 40vw, 420px);
-            background: var(--cream);
-            border-bottom: 1px solid var(--light-grey);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
+            width: 100%; height: clamp(280px, 40vw, 420px);
+            background: var(--cream); border-bottom: 1px solid var(--light-grey);
+            display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
         }
-
         .hero-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background:
-                repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 3px,
-                    rgba(0,0,0,0.015) 3px,
-                    rgba(0,0,0,0.015) 4px
-                );
+            content: ''; position: absolute; inset: 0;
+            background: repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.015) 3px, rgba(0,0,0,0.015) 4px);
         }
-
         .hero-placeholder {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 14px;
-            color: var(--grey);
-            text-align: center;
-            z-index: 1;
+            font-size: 14px; color: var(--grey); text-align: center; z-index: 1;
         }
-
         .hero-caption {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 8px 20px 0;
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 12px;
-            color: var(--grey);
-            line-height: 1.5;
+            max-width: var(--max-width); margin: 0 auto; padding: 8px 20px 0;
+            font-family: 'Source Sans 3', sans-serif; font-size: 12px;
+            color: var(--grey); line-height: 1.5;
         }
-
-        /* Article body */
-        .article {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 32px 20px 80px;
-        }
-
-        .article p {
-            margin-bottom: 20px;
-        }
-
+        .article { max-width: var(--max-width); margin: 0 auto; padding: 32px 20px 80px; }
+        .article p { margin-bottom: 20px; }
         .article p:first-of-type::first-letter {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 62px;
-            float: left;
-            line-height: 0.8;
-            padding-right: 8px;
-            padding-top: 6px;
-            color: var(--red);
-            font-weight: 700;
+            font-size: 62px; float: left; line-height: 0.8;
+            padding-right: 8px; padding-top: 6px;
+            color: var(--red); font-weight: 700;
         }
-
-        .small-caps {
-            font-variant: small-caps;
-            letter-spacing: 0.5px;
-        }
-
-        /* Audio player */
         .audio-comparison {
-            margin: 36px 0;
-            padding: 28px 0;
+            margin: 36px 0; padding: 28px 0;
             border-top: 1px solid var(--light-grey);
             border-bottom: 1px solid var(--light-grey);
         }
-
         .audio-comparison-label {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--red);
-            margin-bottom: 16px;
+            font-size: 12px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            color: var(--red); margin-bottom: 16px;
         }
-
-        .audio-pair {
-            display: flex;
-            gap: 20px;
-        }
-
-        @media (max-width: 540px) {
-            .audio-pair { flex-direction: column; }
-        }
-
+        .audio-pair { display: flex; gap: 20px; }
+        @media (max-width: 540px) { .audio-pair { flex-direction: column; } }
         .audio-card {
-            flex: 1;
-            background: var(--cream);
-            border: 1px solid var(--light-grey);
-            padding: 20px;
-            position: relative;
-            cursor: pointer;
-            transition: border-color 0.2s;
+            flex: 1; background: var(--cream); border: 1px solid var(--light-grey);
+            padding: 20px; cursor: pointer; transition: border-color 0.2s;
         }
-
-        .audio-card:hover {
-            border-color: var(--grey);
-        }
-
-        .audio-card.playing {
-            border-color: var(--red);
-        }
-
-        .audio-card-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
+        .audio-card:hover { border-color: var(--grey); }
+        .audio-card.playing { border-color: var(--red); }
+        .audio-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
         .audio-city {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--dark);
+            font-size: 14px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1px; color: var(--dark);
         }
-
-        .audio-db {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 13px;
-            color: var(--grey);
-        }
-
+        .audio-db { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: var(--grey); }
         .audio-desc {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 13px;
-            color: var(--grey);
-            line-height: 1.4;
-            margin-bottom: 14px;
+            font-size: 13px; color: var(--grey); line-height: 1.4; margin-bottom: 14px;
         }
-
         .play-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: none;
-            border: none;
-            cursor: pointer;
+            display: flex; align-items: center; gap: 8px;
+            background: none; border: none; cursor: pointer;
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--dark);
-            padding: 0;
-            transition: color 0.2s;
+            font-size: 13px; font-weight: 600; color: var(--dark);
+            padding: 0; transition: color 0.2s;
         }
-
         .play-btn:hover { color: var(--red); }
-
-        .play-btn svg {
-            width: 28px;
-            height: 28px;
-            fill: var(--red);
-            transition: transform 0.15s;
-        }
-
+        .play-btn svg { width: 28px; height: 28px; fill: var(--red); transition: transform 0.15s; }
         .play-btn:hover svg { transform: scale(1.1); }
-
         .progress-bar {
-            width: 100%;
-            height: 2px;
-            background: var(--light-grey);
-            margin-top: 12px;
-            position: relative;
-            overflow: hidden;
+            width: 100%; height: 2px; background: var(--light-grey);
+            margin-top: 12px; position: relative; overflow: hidden;
         }
-
-        .progress-fill {
-            height: 100%;
-            background: var(--red);
-            width: 0%;
-            transition: width 0.1s linear;
-        }
-
-        /* Waveform visualiser */
-        .waveform {
-            display: flex;
-            align-items: center;
-            gap: 1.5px;
-            height: 32px;
-            margin-top: 10px;
-        }
-
+        .progress-fill { height: 100%; background: var(--red); width: 0%; transition: width 0.1s linear; }
+        .waveform { display: flex; align-items: center; gap: 1.5px; height: 32px; margin-top: 10px; }
         .waveform-bar {
-            flex: 1;
-            background: var(--light-grey);
-            min-width: 2px;
-            border-radius: 1px;
-            transition: height 0.08s ease, background 0.15s;
+            flex: 1; background: var(--light-grey); min-width: 2px;
+            border-radius: 1px; transition: height 0.08s ease, background 0.15s;
         }
-
-        .audio-card.playing .waveform-bar {
-            background: var(--red);
-            opacity: 0.6;
-        }
-
-        /* Pull quote */
-        .pull-quote {
-            margin: 36px 0;
-            padding: 24px 0 24px 24px;
-            border-left: 3px solid var(--red);
-        }
-
-        .pull-quote p {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 22px;
-            font-style: italic;
-            line-height: 1.5;
-            color: var(--dark);
-            margin-bottom: 0 !important;
-        }
-
-        /* Separator */
-        .separator {
-            width: 40px;
-            height: 1px;
-            background: var(--light-grey);
-            margin: 36px auto;
-        }
-
-        /* End mark */
+        .audio-card.playing .waveform-bar { background: var(--red); opacity: 0.6; }
+        .separator { width: 40px; height: 1px; background: var(--light-grey); margin: 36px auto; }
         .end-mark {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: var(--red);
-            margin-left: 4px;
-            vertical-align: middle;
-            position: relative;
-            top: -1px;
+            display: inline-block; width: 10px; height: 10px;
+            background: var(--red); margin-left: 4px;
+            vertical-align: middle; position: relative; top: -1px;
         }
-
-        /* Footer */
         .footer {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 20px 60px;
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 12px;
-            color: var(--grey);
-            border-top: 1px solid var(--light-grey);
-            padding-top: 20px;
+            max-width: var(--max-width); margin: 0 auto; padding: 0 20px 60px;
+            font-family: 'Source Sans 3', sans-serif; font-size: 12px;
+            color: var(--grey); border-top: 1px solid var(--light-grey); padding-top: 20px;
         }
-
-        /* Volume warning */
         .volume-note {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 11px;
-            color: var(--grey);
-            font-style: italic;
-            margin-top: 12px;
+            font-size: 11px; color: var(--grey); font-style: italic; margin-top: 12px;
         }
     </style>
 </head>
@@ -362,7 +152,7 @@
 <div class="header">
     <div class="section-label">South Asia</div>
     <h1>India's deafening problem</h1>
-    <p class="rubric">Noise pollution is ravaging India’s health and hurting its economy. Nobody seems to care </p>
+    <p class="rubric">Noise pollution is ravaging India's health and hurting its economy. Nobody seems to care</p>
     <div class="meta">Feb 13th 2026</div>
 </div>
 
@@ -377,17 +167,16 @@
 
 <p>The premises of Diamond Horn Palace are far from palatial. In a ramshackle shop in Chandni Chowk, an old, crowded part of Delhi, the business sells horns and other car accessories. Yet the humble surroundings mask a booming trade. "Indians love to buy horns for their cars and bikes," says its proprietor. And because there are ever more cars on the roads, demand keeps rising, he beams.</p>
 
-<p>Mr TK's good news, though, is bad news for India. Step onto any street in the country, or indeed the subcontinent, and it is easy to hear why. According to UN data compiled in 2022, South Asian cities are by far the loudest in the world. For example the noise levels in Delhi are 83 dB on average—roughly 20 times louder than London. The loudest city in the world, though, is Dhaka where sound levels reach 119 dB, roughly what you would experience standing next to a chainsaw or a riveting machine.</p>
+<p>But Diamond Palace's roaring horn sales should sound an alarm for India. Step onto any street in the country, or indeed the subcontinent, and it is easy to hear why. According to UN data compiled in 2022, South Asian cities are by far the loudest in the world. For example, the noise levels in Delhi can touch 83 dB average—roughly 20 times louder than London. The loudest city in the world, though, is Dhaka where the din can reach 119 dB, roughly the equivalent of standing next to a chainsaw.</p>
 
-<p>Noise is no mere irritant. A growing body of research shows that at elevated levels it can be a public-health scourge. India has some 63m people with significant hearing loss, which researchers attribute partly to noise pollution. But the effects can be even more harmful. A study in 2022 which tracked 2,680 children in Barcelona found that a five-decibel increase in traffic noise slowed the development of their working memory by 24%. Meanwhile, that same rise was found to more than double the chance of coronary artery disease among adults in Kashmir, according to a study conducted by researchers at NIT Srinagar.</p>
+<p>Noise is no mere irritant. A growing body of research shows that regular exposure to it can be a public-health scourge. India has some 63m people with significant hearing loss, which researchers attribute partly to noise pollution. But the effects can be even more harmful. A study in 2022, which tracked 2,680 children in Barcelona, found that a five-decibel increase in traffic noise slowed the development of working memory by 24%. Meanwhile, that same rise was found to more than double the chance of heart disease among adults in the north Indian state of Kashmir, according to a study conducted by researchers at NIT Srinagar. Unlike air pollution, for which India has well-documented economic estimates, nobody has attempted to calculate what noise costs the country, but estimates from Europe suggest it would shave off at least 1-2% from GDP.</p>
 
-<p>But these effects may be merely scratching the surface, according to Manish Manohare, a researcher at the Indian Institute of Technology in Roorkee. There hasn't been enough research done on understanding how noise affects Indians, he says. To address that, he has conducted experiments comparing the responses of Indian and British participants to identical traffic-noise recordings. When exposed to the sound from an average Delhi street, the average Briton's heart races and their palms sweat—both signs of acute stress. Unsurprising, given that they are used to more docile environments, such as this soundscape in London.</p>
+<p>These effects though may be merely scratching the surface, according to Manish Manohare, a researcher at the Indian Institute of Technology in Delhi. There hasn't been enough research done on understanding how noise affects Indians, he says. To address that, he has conducted experiments comparing the responses of Indian and British participants to identical traffic-noise recordings. When exposed to the sound from an average Delhi street, the British participants' heart races and their palms sweat—both signs of acute stress. Unsurprising, given that they are used to more docile environments.</p>
 
 <!-- AUDIO COMPARISON -->
 <div class="audio-comparison">
     <div class="audio-comparison-label">Listen: two cities compared</div>
     <div class="audio-pair">
-
         <div class="audio-card" id="card-london" onclick="toggleAudio('london')">
             <div class="audio-card-header">
                 <span class="audio-city">London</span>
@@ -401,7 +190,6 @@
             <div class="waveform" id="waveform-london"></div>
             <div class="progress-bar"><div class="progress-fill" id="progress-london"></div></div>
         </div>
-
         <div class="audio-card" id="card-delhi" onclick="toggleAudio('delhi')">
             <div class="audio-card-header">
                 <span class="audio-city">Delhi</span>
@@ -415,27 +203,24 @@
             <div class="waveform" id="waveform-delhi"></div>
             <div class="progress-bar"><div class="progress-fill" id="progress-delhi"></div></div>
         </div>
-
     </div>
     <div class="volume-note">🔊 Best experienced with headphones. Audio recordings from research by Manohare et al.</div>
 </div>
 <!-- END AUDIO COMPARISON -->
 
-<p>Indians, by contrast, display less stress when exposed to the Delhi street noise. But beneath the hardened exterior, there are alarming vulnerabilities. Analysis of their responses revealed signs of chronic cardiovascular strain caused by the exposure to the noise.</p>
+<p>Indians, by contrast, display less stress when exposed to the Delhi street noise. But beneath the hardened exterior, there are alarming vulnerabilities. Analysis of their responses revealed signs of chronic cardiovascular strain caused by their constant exposure to noise.</p>
 
-<p>Yet for all these harms, remarkably little is being done. Technically India's Central Pollution Control Board (CPCB) has a mandate to monitor and tackle noise. But it is struggling on both fronts. Its noise-monitoring network covers just 70 stations across seven cities and last reported data in 2018. The CPCB's call to maintain "silent zones" in cities—areas near hospitals and schools—have fallen on deaf ears. A ten-year analysis of available noise data till 2018 found that noise levels at these "silent zones" were more than two times louder than the regulator's limit.</p>
+<p>Yet for all these harms, remarkably little is being done. Technically India's Central Pollution Control Board (CPCB), the main regulator, has a mandate to monitor and tackle noise. But it is struggling on both fronts. Its noise-monitoring network covers just 70 stations across seven cities and last reported data in 2018. The CPCB's call to maintain "silent zones" in cities—areas near hospitals and schools—has also fallen on deaf ears. A ten-year analysis of available noise data till 2018 found that noise levels at these "silent zones" were more than two times louder than the regulator's limit.</p>
 
-<p>Many beings, such as people and dogs, and things, such as cars and factories, contribute to the racket in Indian cities. But the biggest source is road traffic, which accounts for around 75% of noise, estimates Mr Manohare. Yet tackling it is hard for systemic reasons related to the way Indian cities are structured and how Indians have been conditioned to behave. Poor city planning has made Indian traffic chaotic—what researchers call "heterogeneous"—as trucks, auto-rickshaws, motorcycles, bicycles and pedestrians jostle for space. In this free-for-all, the horn has evolved from an instrument of displeasure into an all-purpose communication device: a warning to an oblivious pedestrian, a signal for an impending turn, a reminder to the driver ahead that the light has changed, or simply a reflexive tic. Data from a network of 500,000 connected electric scooters found that riders in Kolkata, an eastern metropolis, honk 131 times an hour.</p>
-
-<p>Such behaviour is actively encouraged. Trucks across the country bear the painted exhortation "Horn OK Please." Shops like Diamond Horn Palace flaunt their wares on social media; YouTubers review ever-louder models. The market's logic is simple: in a country where everyone honks, drivers feel they need louder horns to be heard above the din. Mercedes-Benz has acknowledged as much, confirming that its horns for the Indian market are "slightly adapted for enhanced durability" because horn use in India is "more frequent" and serves as "an essential communication tool."</p>
+<p>Both beings (such as people and dogs) and things (such as cars and factories) contribute to the racket in Indian cities. But the biggest source is road traffic, which accounts for around 75% of noise, estimates Mr Manohare. Yet tackling it is hard for systemic reasons related to the way Indian cities are structured and how Indians have been conditioned to behave. Poor city planning has made Indian traffic chaotic—what researchers call "heterogeneous"—as trucks, auto-rickshaws, motorcycles, bicycles and pedestrians jostle for space. In this free-for-all, the horn has taken on heterogeneous uses, morphing from merely an instrument of displeasure or warning into an all-purpose communication device: allowing drivers to signal for an impending turn or simply announcing their presence at a traffic light. Such behaviour is actively encouraged. Trucks across the country bear the painted exhortation "Horn OK Please". On social media, stores hawk their wares by blowing their horns. Mercedes-Benz, a German carmaker, has adapted its horns in India to make them more durable for the more frequent use in the country. Data from a network of 500,000 scooters found that riders in Kolkata, an eastern metropolis, honk roughly 131 times an hour.</p>
 
 <div class="separator"></div>
 
-<p>The desperateness of the problem is prompting desperate solutions. Nitin Gadkari, the transport minister, has repeatedly proposed replacing vehicle horns with the sounds of Indian musical instruments—tablas, flutes, violins. But the issue will require more fundamental change, says Savithra Rao, who heads one of the few NGOs in India working on this issue. "The issue can't be sorted by regulation. Even if the traffic police force is quadrupled, it cannot be omniscient enough to catch people honking. People need to be sensitised about the pitfalls of noise pollution and change their behaviour," she argues.</p>
+<p>The desperateness of the problem is prompting desperate solutions. Nitin Gadkari, the transport minister, has suggested replacing vehicle horns with the mellifluous sounds of Indian musical instruments (like tablas and flutes). But the issue will require more serious change, says Savithra Rao, who heads one of the few NGOs in India working on noise pollution. "The problem can't be sorted by regulation or better enforcement. Even if the traffic police force is quadrupled, it can never catch people honking. People need to be sensitised about the harms of noise pollution and change their behaviour," she argues.</p>
 
-<p>There may be ways to make that happen. Anand Damani, a behavioural designer in Mumbai, has developed a small dashboard device called "Bleep" that beeps and flashes every time the driver honks. To silence it, the driver must press a button—a tiny interruption that forces the honk from autopilot into conscious thought. Over a six-month trial, participants reduced their honking by 61%. Traffic conditions were unchanged; the vast majority of honks had simply been unnecessary.</p>
+<p>There may be ways to make that happen. Anand Damani, a behavioural designer in Mumbai, has developed a small dashboard device called "Bleep" that beeps and flashes every time the driver honks. To silence it, the driver must press a button—a tiny interruption that forces the honk from autopilot into conscious thought. Over a six-month trial, participants reduced their honking by 61% even as traffic conditions were unchanged.</p>
 
-<p>There are simpler measures too. Public health facilities could have posters and signage that stress the ills of excessive noise. India is rapidly expanding road infrastructure, but could do more using noise-reducing surfaces. Noise barriers could be erected around sensitive areas. And pushing along India's electrification drive will help too: electric buses reduce urban noise by up to 4.4 dB at typical city speeds. Ultimately, though, for any of this to be implemented it will need both public and political will. India is still a long way from the kind of strategic noise-mapping seen in the EU which is required in all cities above 100,000 people. So far at least the issue is being drowned out by the noise.<span class="end-mark"></span></p>
+<p>That may even be an ambitious pilot, but there are simpler measures that could help. Public health facilities and doctors should stress the dangers of excessive noise in the same way they warn of air pollution, says Ms Rao. India is rapidly expanding its road infrastructure, but could do more of that using noise-reducing surfaces. Noise barriers could be erected around sensitive areas. And pushing along India's electrification drive will help too: electric buses reduce urban noise by up to 4.4 dB at typical city speeds. Ultimately, though, for any of this to be implemented it will need both public and political will. India is still a long way from the kind of strategic noise-mapping seen in the EU which is required in all cities above 100,000 people. So far though the issue is being drowned out by the noise.<span class="end-mark"></span></p>
 
 </article>
 
@@ -444,20 +229,16 @@
 </div>
 
 <script>
-    // Audio players
     const audioFiles = {
         london: new Audio('audio/london.mp3'),
         delhi: new Audio('audio/delhi.mp3')
     };
-
     let currentPlaying = null;
     let animFrames = {};
 
-    // Generate waveform bars
     ['london', 'delhi'].forEach(city => {
         const container = document.getElementById(`waveform-${city}`);
-        const barCount = 40;
-        for (let i = 0; i < barCount; i++) {
+        for (let i = 0; i < 40; i++) {
             const bar = document.createElement('div');
             bar.className = 'waveform-bar';
             bar.style.height = '4px';
@@ -468,12 +249,7 @@
     function toggleAudio(city) {
         const audio = audioFiles[city];
         const other = city === 'london' ? 'delhi' : 'london';
-
-        // Stop the other if playing
-        if (currentPlaying && currentPlaying !== city) {
-            stopAudio(other);
-        }
-
+        if (currentPlaying && currentPlaying !== city) stopAudio(other);
         if (audio.paused) {
             audio.play();
             currentPlaying = city;
@@ -494,8 +270,7 @@
 
     function stopAudio(city) {
         const audio = audioFiles[city];
-        audio.pause();
-        audio.currentTime = 0;
+        audio.pause(); audio.currentTime = 0;
         document.getElementById(`card-${city}`).classList.remove('playing');
         document.getElementById(`label-${city}`).textContent = 'Play';
         document.getElementById(`icon-${city}`).innerHTML = '<polygon points="5,3 19,12 5,21"/>';
@@ -506,46 +281,31 @@
     function updateProgress(city) {
         const audio = audioFiles[city];
         const fill = document.getElementById(`progress-${city}`);
-
         function step() {
             if (audio.paused) return;
-            const pct = (audio.currentTime / audio.duration) * 100;
-            fill.style.width = pct + '%';
+            fill.style.width = (audio.currentTime / audio.duration) * 100 + '%';
             requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
     }
 
-    // Waveform animation
     function startWaveform(city) {
         const bars = document.getElementById(`waveform-${city}`).children;
         function animate() {
-            for (let i = 0; i < bars.length; i++) {
-                const h = 4 + Math.random() * 26;
-                bars[i].style.height = h + 'px';
-            }
+            for (let i = 0; i < bars.length; i++) bars[i].style.height = (4 + Math.random() * 26) + 'px';
             animFrames[city] = requestAnimationFrame(animate);
         }
         animate();
     }
 
     function stopWaveform(city) {
-        if (animFrames[city]) {
-            cancelAnimationFrame(animFrames[city]);
-            delete animFrames[city];
-        }
+        if (animFrames[city]) { cancelAnimationFrame(animFrames[city]); delete animFrames[city]; }
         const bars = document.getElementById(`waveform-${city}`).children;
-        for (let i = 0; i < bars.length; i++) {
-            bars[i].style.height = '4px';
-        }
+        for (let i = 0; i < bars.length; i++) bars[i].style.height = '4px';
     }
 
-    // Reset on end
     ['london', 'delhi'].forEach(city => {
-        audioFiles[city].addEventListener('ended', () => {
-            stopAudio(city);
-            currentPlaying = null;
-        });
+        audioFiles[city].addEventListener('ended', () => { stopAudio(city); currentPlaying = null; });
     });
 </script>
 
